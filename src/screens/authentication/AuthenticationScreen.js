@@ -15,15 +15,19 @@ export default class AuthenticationScreen extends Component {
         return (
             <Container>
                 <Content>
-                    <View style={{ height: windowHeight, }}>
-                        <Image style={{ resizeMode: 'center', width: 400, height: 400, marginBottom: 50 }} source={{ uri: 'https://via.placeholder.com/1000x1000' }} />
-                        <Button style={{ marginBottom: 10, elevation: 0, width: windowWidth - 100, borderRadius: 0, borderTopRightRadius: 7, justifyContent: 'flex-end', paddingRight: 20 }}>
-                            <Text style={{ color: 'white' }}>Sign Up</Text>
-                        </Button>
-                        <Button style={{ elevation: 0, width: windowWidth - 100, borderRadius: 0, borderBottomRightRadius: 7, backgroundColor: 'transparent', borderColor: 'grey', borderWidth: 1, justifyContent: 'flex-end', paddingRight: 20 }}>
-                            <Text>Sign In</Text>
-                        </Button>
-                        <View style={{ flexDirection: 'row', marginTop: 50, alignItems: 'center', alignSelf: 'center'  }}>
+                    <View style={{ height: windowHeight, justifyContent: 'space-around', paddingTop: 50 }}>
+                        <Text style={{ color: "#4242DB", fontWeight: '700', alignSelf: 'center', fontSize: 20, marginBottom: 20,  }}>MEDI WALLET</Text>
+                        <Image style={{ resizeMode: 'contain', width: 300, height: 300, alignSelf: 'center', marginBottom: 40 }} source={require('../../res/images/background.png')} />
+                        <View>
+                            <Button style={{ marginBottom: 10, elevation: 0, width: windowWidth - 100, borderRadius: 0, borderTopRightRadius: 7, justifyContent: 'flex-end', paddingRight: 20, backgroundColor: '#4242DB' }}>
+                                <Text style={{ color: 'white' }}>Sign Up</Text>
+                            </Button>
+                            <Button style={{ elevation: 1, width: windowWidth - 100, borderRadius: 0, borderBottomRightRadius: 7, backgroundColor: 'transparent', borderColor: 'grey', borderWidth: 1, justifyContent: 'flex-end', paddingRight: 20 }}>
+                                <Text>Sign In</Text>
+                            </Button>
+                        </View>
+
+                        <View style={{ flexDirection: 'row', marginTop: 50, alignItems: 'center', alignSelf: 'center' }}>
                             <Text style={{ letterSpacing: 1, }}>Not sure yet? </Text>
                             <Button transparent>
                                 <Text style={{ color: '#4242DB', letterSpacing: 1 }}>
