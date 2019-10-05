@@ -34,7 +34,7 @@ const WalletNavigator = createStackNavigator({
 
 const AppNavigator = createBottomTabNavigator({
   Home: HomeScreen,
-  Hospital: HospitalScreen,
+  HMO: HospitalScreen,
   Wallet: WalletNavigator,
   Profile: ProfileScreen,
 },
@@ -46,7 +46,7 @@ const AppNavigator = createBottomTabNavigator({
         let iconName;
         if (routeName === 'Home') {
           iconName = 'ios-home'
-        } else if (routeName === 'Hospital') {
+        } else if (routeName === 'HMO') {
           iconName = 'ios-heart'
         } else if (routeName === 'Wallet') {
           iconName = 'ios-briefcase'
