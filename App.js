@@ -5,6 +5,7 @@ import AuthenticationScreen from './src/screens/authentication/AuthenticationScr
 import LoginScreen from './src/screens/authentication/LoginScreen.js';
 import SignupScreen from './src/screens/authentication/SignupScreen.js';
 import FundWalletScreen from './src/screens/wallet/FundWalletScreen.js';
+import WalletScreen from './src/screens/wallet/WalletScreen.js';
 import HomeScreen from './src/screens/wallet/HomeScreen.js';
 import HospitalScreen from './src/screens/wallet/HospitalScreen.js';
 import ProfileScreen from './src/screens/wallet/ProfileScreen.js';
@@ -23,10 +24,18 @@ const AuthNavigator = createStackNavigator({
   headerMode: 'none'
 })
 
+const WalletNavigator = createStackNavigator({
+  WalletS: WalletScreen,
+  FundWallet: FundWalletScreen
+}, {
+  initialRouteName: 'WalletS',
+  headerMode: 'none'
+})
+
 const AppNavigator = createBottomTabNavigator({
   Home: HomeScreen,
   Hospital: HospitalScreen,
-  Wallet: FundWalletScreen,
+  Wallet: WalletNavigator,
   Profile: ProfileScreen,
 },
   {

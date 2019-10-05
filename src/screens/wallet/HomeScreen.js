@@ -25,29 +25,30 @@ export default class HomeScreen extends Component {
                 </View>
                 <Content>
                     <View style={{ height: windowHeight, paddingHorizontal: 20, paddingTop: 20, alignItems: 'center' }}>
-                        <ImageBackground source={require('../../res/images/card.png')} style={{ height: 130, width: windowWidth - 50 , backgroundColor: 'red', elevation: 10, borderRadius: 5, alignItems: 'center', justifyContent: 'center' }}>
-                            <Text style={{ letterSpacing: 1, fontSize: 14,}}>TOTAL BALANCE</Text>
-                            <View style={{ flexDirection: 'row', marginTop: 10  }}>
-                            <Text>₦</Text>
-                            <Text style={{ fontSize: 25, fontWeight: '700', letterSpacing: 2 }}>101</Text>
-                            <Text style={{ alignSelf: 'flex-end', fontSize: 15}}>.70</Text>
+                        <ImageBackground source={require('../../res/images/card.png')} style={{ height: 130, width: windowWidth - 50, backgroundColor: 'red', elevation: 10, borderRadius: 5, alignItems: 'center', justifyContent: 'center' }}>
+                            <Text style={{ letterSpacing: 1, fontSize: 14, }}>TOTAL BALANCE</Text>
+                            <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                                <Text>₦</Text>
+                                <Text style={{ fontSize: 25, fontWeight: '700', letterSpacing: 2 }}>101</Text>
+                                <Text style={{ alignSelf: 'flex-end', fontSize: 15 }}>.70</Text>
                             </View>
                         </ImageBackground>
 
-                        {/* <Text style={{ fontSize: 22, fontWeight: '700', color: '#4242DB', marginBottom: 30 }}>MEDI WALLET</Text> */}
-                        {/* <Text style={{ zIndex: 100, position: 'absolute', top: 150, left: 40, fontSize: 22, fontWeight: '600' }}>Jimoh Odutola</Text>
-                        <Text style={{ zIndex: 100, position: 'absolute', top: 250, left: 40, fontSize: 22, fontWeight: '600' }}>₦25,000</Text>
+                        <Text style={{ alignSelf: 'flex-start', marginTop: 30, marginBottom: 20, fontSize: 18, color: '#4242DB' }}>Last Transaction</Text>
 
-                        <Button style={{ justifyContent: 'center', width: 130, height: 48, elevation: 10, backgroundColor: 'white', borderRadius: 5, position: 'absolute', top: 300, left: 35 }}>
-                            <Icon name="ios-send" />
-                            <Text>Fund Wallet</Text>
-                        </Button>
-                        <Button style={{ justifyContent: 'center', width: 130, height: 48, elevation: 10, backgroundColor: 'white', borderRadius: 5, position: 'absolute', top: 300, right: 35 }}>
-                            <Icon name="ios-send" />
-                            <Text>Make payment</Text>
-                        </Button> */}
-                        {/* <View style={{ zIndex: 10, width: 320, height: 190, backgroundColor: '#00000020', elevation: 10 }}> */}
-                        {/* </View> */}
+                        <View style={{borderRadius: 5, elevation: 10, backgroundColor: 'white', width: windowWidth - 50, height: 130, padding: 20, justifyContent: 'space-between' }}>
+                            <View style={{ flexDirection: 'row', justifyContent: 'space-between'}}>
+                                <View>
+                                    <Text style={{ fontWeight: '600', fontSize: 17 }}>Malaria Treatment</Text>
+                                    <Text style={{ color: '#00000060'}}>Today 12:00PM</Text>
+                                </View>
+                                <Text style={{ color: '#4242DB'}}>₦2000.00</Text>
+                            </View>
+
+                            <Text style={{ fontSize: 20, color: '#4242DB', letterSpacing: 1}}>Unilag Health Center</Text>
+                        </View>
+
+
 
                     </View>
                 </Content>
