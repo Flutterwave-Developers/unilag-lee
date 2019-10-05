@@ -47,14 +47,18 @@ export default class SignupScreen extends Component {
                                 <Text>Forgot Password?</Text>
                             </Button>
                         </View>
-                        <Button style={{ justifyContent: 'center', borderRadius: 5 }}>
+                        <Button onPress={() => {
+                            this.props.navigation.navigate('Login')
+                        }} style={{ justifyContent: 'center', borderRadius: 5 }}>
                             <Text style={{ color: 'white' }}>
                                 Sign Up
                             </Text>
                         </Button>
                         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                             <Text>Already have an account? </Text>
-                            <Button transparent>
+                            <Button onPress={() => {
+                                this.props.navigation.navigate('Login')
+                            }} transparent>
                                 <Text style={{ color: '#4242DB' }}>Log In</Text>
                             </Button>
                         </View>
